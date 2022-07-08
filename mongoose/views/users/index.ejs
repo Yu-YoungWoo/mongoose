@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3 class="mb-3">Users</h3>
+
+    <ul class="list-group">
+        <% if(users == null || users.length == 0){ %>
+            <li class="list-group-item">There is no user yet.</li>
+        <% } %> 
+    </ul>
+
+    <form action="/" method="post">
+        name: <input type="text" name="name">
+        age: <input type="number" name="age">
+        married <input type="checkbox" name="married" id="" value="true"> <input type="checkbox" name="false" id="">
+    </form>
+
+</body>
+</html>
